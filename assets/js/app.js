@@ -1,10 +1,11 @@
 const baseEndpoint = 'https://api.github.com';
 const usersEndpoint = `${baseEndpoint}/users`;
-const $n = document.querySelector('name');
-const $b = document.querySelector('#blog');
+const $n = document.querySelector('.name');//se agrego punto
+const $b = document.querySelector('.blog');//se cambio # por punto ya que es una clase
 const $l = document.querySelector('.location');
+c
 
-function displayUser(username) {
+async function displayUser(username) {//se añadió el async
   $n.textContent = 'cargando...';
   const response = await fetch(`${usersEndpoint}/${username}`);
   console.log(data);
